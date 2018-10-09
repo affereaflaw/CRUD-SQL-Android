@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.affereaflaw.databaseex.MainActivity"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Database"
+        android:id="@+id/title"
+        android:layout_gravity="center_horizontal"
+        style="@style/AlertDialog.AppCompat"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtId"
+        android:hint="ID"
+        android:text="1"
+        android:visibility="gone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtName"
+        android:hint="Nama"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:typeface="sans" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtKelas"
+        android:layout_gravity="center_horizontal"
+        android:hint="Kelas/No.Presensi"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:typeface="sans" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTelp"
+        android:layout_gravity="center_horizontal"
+        android:hint="No.HP/Line"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:typeface="sans" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNo"
+        android:layout_gravity="center_horizontal"
+        android:hint="Kehadiran(.../...)"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:typeface="sans" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Add"
+            android:id="@+id/btnAdd"
+            android:layout_gravity="center_horizontal"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:drawableTintMode="screen"
+            android:background="@color/switch_thumb_normal_material_light"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Update"
+            android:id="@+id/btnUpdate"
+            android:layout_gravity="center_horizontal"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:drawableTintMode="screen"
+            android:background="@color/switch_thumb_normal_material_light"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Delete"
+            android:id="@+id/btnDelete"
+            android:layout_gravity="center_horizontal"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:drawableTintMode="screen"
+            android:background="@color/switch_thumb_normal_material_light"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:choiceMode="singleChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
